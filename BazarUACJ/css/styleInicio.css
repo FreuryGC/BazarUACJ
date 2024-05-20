@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.freeimages.com/cme/images/istock/previews/2385/23856491-background-of-sales.jpg);
+}
+
+.botones-container {
+    position: fixed;
+    top: 80px; /* Ajusta este valor según la altura de la navbar */
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.botones-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.botones-container button:hover {
+    transform: scale(1.05); /* Escala el botón al hacer hover */
+}
+
+.btn-comida {
+    background-image: url('https://previews.123rf.com/images/tonobalaguer/tonobalaguer1602/tonobalaguer160200961/51858278-copyspace-marco-mezcla-de-comida-mexicana-colorido-fondo-m%C3%A9xico.jpg');
+    background-size: 100px 100px; /* Ajusta el tamaño de la imagen */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-electronicos {
+    background-image: url('https://png.pngtree.com/background/20230526/original/pngtree-the-computer-and-electronic-components-are-shown-on-the-background-picture-image_2748828.jpg');
+    background-size: 100px 100px; /* Ajusta el tamaño de la imagen */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-vehiculos {
+    background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-classic-vehicle-drives-down-a-city-street-picture-image_2654652.jpg');
+    background-size: 100px 100px; /* Ajusta el tamaño de la imagen */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn-joyeria {
+    background-image: url('https://img.pikbest.com/origin/09/09/24/25MpIkbEsTSwU.jpg!w700wp');
+    background-size: 100px 100px; /* Ajusta el tamaño de la imagen */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.productos-container {
+    margin-top: 10%; /* Ajusta este valor para dar espacio entre los botones y los productos */
+    padding: 15px;
+    background-color: transparent;
+    width: 100%;
+    height: 60%;
+    max-height: 80vh; /* Establecer una altura máxima */
+    overflow-y: auto; /* Agregar desbordamiento vertical */
+}
+
+
+.card {
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

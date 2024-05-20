@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://images.freeimages.com/cme/images/istock/previews/2385/23856491-background-of-sales.jpg);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+#mainContent {
+    margin-top: 70px; /* Ajusta según la altura del navbar para evitar solapamientos */
+    height: 800px;
+}
+
+.cover-photo {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Ajusta la altura según sea necesario */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #37383a; /* Borde opcional */
+}
+
+.profile-picture {
+    position: absolute;
+    bottom: -50px; /* Ajusta esto según la posición deseada */
+    left: 50px; /* Ajusta esto según la posición deseada */
+    width: 100px; /* Ancho deseado de la foto de perfil */
+    height: 100px; /* Alto deseado de la foto de perfil */
+    border-radius: 50%; /* Para hacerlo circular */
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Para asegurar que esté encima de la foto de portada */
+    border: 3px solid #37383a; /* Borde opcional */
+}
+
+.nombre-usuario {
+    position: absolute;
+    bottom: -30px; /* Ajusta esto según la posición deseada */
+    left: 15%; /* Ajusta esto según la posición deseada */
+    width: 40%; /* Ancho deseado de la foto de perfil */
+    height: 30%; /* Alto deseado de la foto de perfil */
+    background-color: #fffb00; /* Color de fondo temporal */
+    z-index: 1; /* Para asegurar que esté encima de la foto de portada */
+    border: 2px solid #37383a;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 66%;
+    margin-top: 60px; /* Espacio entre la foto de portada y el contenido */
+}
+
+.sidebar {
+    width: 30%; /* Ancho deseado de la barra lateral */
+    background-color: #f00000; /* Color de fondo temporal */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box;
+    border: transparent; /* Borde opcional */
+}
+
+.products {
+    width: 80%; /* Ancho del área de productos */
+    height: 100%;
+    padding: 20px; /* Espaciado interno */
+    background-color: transparent; /* Color de fondo temporal */
+    box-sizing: border-box;
+    border: transparent; /* Borde opcional */
+    overflow: auto;
+}
+
+.product {
+    display: flex; /* Flexbox para alinear la imagen y la información del producto */
+    border: 1px solid #ccc; /* Borde de cada producto */
+    margin-bottom: 20px; /* Espacio entre productos */
+    padding: 10px; /* Espaciado interno de cada producto */
+    background-color: #fff; /* Fondo blanco para cada producto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.product img {
+    width: 100px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: 100px; /* Ajusta la altura de la imagen según sea necesario */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área, manteniendo la proporción */
+    margin-right: 20px; /* Espacio entre la imagen y la información */
+}
+
+.upload-label {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.upload-label:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tusProductos {
+    position: absolute;
+    bottom: 44%; /* Ajusta esto según la posición deseada */
+    left: 77%; /* Ajusta esto según la posición deseada */
+    width: 16.5%; /* Ancho deseado del contenedor */
+    height: 10%; /* Alto deseado del contenedor */
+    background-color: #fffb00; /* Color de fondo */
+    z-index: 1; /* Para asegurar que esté encima de la foto de portada */
+    display: flex; /* Activar flexbox */
+    align-items: center; /* Centrar en el eje Y */
+    justify-content: flex-end; /* Alinear el contenido al final en el eje X */
+    padding-right: 10px; /* Espaciado entre el texto y el borde derecho */
+    box-sizing: border-box; /* Incluir padding en el tamaño total del elemento */
+    border-radius: 5px;
+    border: 2px solid #37383a;
+}
+
+.agregarProd {
+    position: absolute;
+    bottom: 44%; /* Ajusta esto según la posición deseada */
+    left: 32.85%; /* Ajusta esto según la posición deseada */
+    width: 15%; /* Ancho deseado del contenedor */
+    height: 8%; /* Alto deseado del contenedor */
+    background-color: transparent; /* Color de fondo */
+    z-index: 1; /* Para asegurar que esté encima de la foto de portada */
+    display: flex; /* Activar flexbox */
+    align-items: center; /* Centrar en el eje Y */
+    justify-content: flex-end; /* Alinear el contenido al final en el eje X */
+    padding-right: 10px; /* Espaciado entre el texto y el borde derecho */
+    box-sizing: border-box; /* Incluir padding en el tamaño total del elemento */
+    border-radius: 5px;
+}
+
